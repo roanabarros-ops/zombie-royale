@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#101914">
+  <title>ZOMBIE ROYALE — sobreviva à horda</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="importmap">
+    {"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.187.0/build/three.module.js"}}
+  </script>
+  <script type="module" src="game.js"></script>
+</head>
+<body>
+  <main id="app">
+    <div id="game-root" aria-label="Arena 3D de sobrevivência"></div>
+    <div class="vignette"></div>
+    <header class="brand"><span class="brand-mark">ZR</span><span>ZOMBIE <b>ROYALE</b><small>OUTBREAK SURVIVAL</small></span></header>
+    <div id="hud" class="hud" hidden>
+      <div class="top-left"><div class="stat"><small>ONDA</small><strong id="wave">01</strong></div><div class="stat"><small>ZUMBIS</small><strong id="zombies">0</strong></div><div class="stat"><small>PONTOS</small><strong id="score">0000</strong></div><div class="stat timer"><small>SOBREVIVÊNCIA</small><strong id="time">00:00</strong></div></div>
+      <div class="top-right"><div class="zone-tag"><i></i> ZONA DE CONTENÇÃO <b>ATIVA</b></div><div id="objective">ELIMINE A HORDA</div></div>
+      <div class="crosshair"><i></i><i></i><i></i><i></i><b></b></div>
+      <div id="hit-marker" class="hit-marker">✕</div>
+      <div class="bottom-left"><div class="health-label"><span>VITALIDADE</span><b id="health-value">100</b></div><div class="health-track"><i id="health-fill"></i></div><div class="status-row"><span>✚ <b id="medkits">0</b></span><span>☠ <b id="kill-count">0</b> ELIMINAÇÕES</span></div></div>
+      <div class="weapon-panel"><div class="weapon-name"><span id="weapon-name">PISTOLA</span><span id="weapon-mode">SEMIAUTO</span></div><div class="ammo"><strong id="ammo">12</strong><span>/ <b id="reserve">60</b></span></div><div class="ammo-track"><i id="ammo-fill"></i></div><div class="weapon-slots"><span class="selected" data-slot="1"><small>1</small><b>PISTOLA</b></span><span data-slot="2"><small>2</small><b>ESCOPETA</b></span><span data-slot="3"><small>3</small><b>RIFLE</b></span><span data-slot="4"><small>4</small><b>SNIPER</b></span></div></div>
+      <div id="prompt" class="prompt" hidden>APERTE <b>E</b> PARA ABRIR BAÚ</div>
+      <div id="toast" class="toast"></div>
+      <div class="controls-hint"><kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd> MOVER <span>SHIFT CORRER</span><span>BOTÃO ESQUERDO ATIRAR</span><span>R RECARREGAR</span><span>E ABRIR BAÚ</span><span>Q USAR KIT</span></div>
+      <button id="sound" class="sound-button" aria-label="Ativar ou desativar som">SOM: LIGADO</button>
+    </div>
+    <section id="menu" class="screen-card">
+      <div class="menu-topline"><span class="status-dot"></span> SINAL DE VIDA DETECTADO <span class="season">SEASON 01</span></div>
+      <div class="title-lockup"><span class="title-kicker">THE LAST STAND</span><h1>ZOMBIE<br><em>ROYALE</em></h1><div class="slash"></div><p>A cidade caiu. A floresta está infectada.<br>Quantas ondas você consegue sobreviver?</p></div>
+      <div class="menu-bottom"><button id="play" class="play-button"><span>JOGAR</span><b>↗</b></button><div class="menu-controls"><span><kbd>WASD</kbd> MOVER</span><span><kbd>MOUSE</kbd> MIRAR</span><span><kbd>1–4</kbd> ARMAS</span></div></div>
+      <div class="menu-art"><div class="moon"></div><div class="art-building building-a"></div><div class="art-building building-b"></div><div class="art-building building-c"></div><div class="art-tree tree-a"></div><div class="art-tree tree-b"></div><div class="art-tree tree-c"></div><div class="art-survivor"><i></i></div><span class="art-label">SAFE ZONE<br><b>01:45</b></span></div>
+    </section>
+    <section id="pause" class="screen-card compact" hidden><div class="menu-topline">PAUSA TÁTICA</div><h2>REORGANIZE<br><em>A DEFESA</em></h2><p>A horda não vai esperar para sempre.</p><button id="resume" class="play-button"><span>CONTINUAR</span><b>↗</b></button><button id="quit" class="plain-button">VOLTAR AO MENU</button></section>
+    <section id="defeat" class="screen-card compact" hidden><div class="menu-topline"><span class="status-dot dead"></span> SINAL PERDIDO</div><h2>VOCÊ FOI<br><em>DERROTADO</em></h2><p id="defeat-summary">A horda tomou a cidade.</p><div class="final-stats"><span>ONDAS <b id="final-wave">1</b></span><span>ELIMINAÇÕES <b id="final-kills">0</b></span><span>TEMPO <b id="final-time">00:00</b></span></div><button id="restart" class="play-button"><span>JOGAR NOVAMENTE</span><b>↻</b></button><button id="main-menu" class="plain-button">MENU PRINCIPAL</button></section>
+    <div id="loading" class="loading"><span class="loading-mark">ZR</span><strong>CARREGANDO A ZONA...</strong><i></i></div>
+  </main>
+</body>
+</html>
