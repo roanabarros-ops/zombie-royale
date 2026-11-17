@@ -6,7 +6,9 @@ Jogo simples de tiro e sobrevivência em 2D. A página principal funciona direto
 
 Abra `index.html` ou visite o site publicado no GitHub Pages.
 
-Controles: `WASD` move, mouse mira e atira, `1–4` troca de arma, `R` recarrega e `E` abre o baú mais próximo.
+Controles: `WASD` ou setas movem, mouse mira e atira, `1–4` troca de arma, `R` recarrega, `E` abre baús, `Space` esquiva, `Q` ativa um pulso elétrico e `F` levanta um escudo. No celular, use o joystick e os botões na tela.
+
+Rafa, o atirador, ajuda a eliminar zumbis. Luna, a médica, cura você e os companheiros. Existem zumbis corredores e tanques, além de um chefe a cada cinco ondas.
 
 ## Versão 3D
 

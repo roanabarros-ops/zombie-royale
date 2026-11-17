@@ -1,0 +1,18 @@
+ZOMBIE ROYALE — versão leve
+
+Abra index.html no navegador e clique em JOGAR.
+
+COMPUTADOR
+WASD ou setas: andar
+Mouse: mirar e atirar
+1, 2, 3, 4: trocar de arma
+R: recarregar
+E: abrir baú
+Espaço: esquiva
+Q: pulso elétrico
+F: escudo
+
+CELULAR
+Use o joystick no canto inferior esquerdo para andar e os botões do lado direito para atirar e ativar poderes.
+
+Rafa ajuda a atirar nos zumbis. Luna cura o esquadrão. Chefes aparecem a cada cinco ondas.
