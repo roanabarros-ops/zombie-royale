@@ -1,18 +1,14 @@
 # ZOMBIE ROYALE
 
-Jogo simples de tiro e sobrevivência em 2D. A página principal funciona direto no navegador, sem servidor, instalação ou bibliotecas externas.
+Jogo de ação e sobrevivência em 3D, com campanha de quatro níveis, zonas urbanas tomadas, armas e resgates. Rafa ajuda a atirar e Luna cura. Cada resgate entrega a armadura necessária para entrar no nível seguinte; a armadura absorve parte do dano.
 
 ## Jogar
 
-Abra `index.html` ou visite o site publicado no GitHub Pages.
+Abra `index.html` ou visite o site publicado no GitHub Pages. A versão 3D carrega Three.js pela internet. Para testar localmente, rode `python3 -m http.server 8000` e abra `http://localhost:8000/`.
 
-Controles: `WASD` ou setas movem, mouse mira e atira, `1–4` troca de arma, `R` recarrega, `E` abre baús, `Space` esquiva, `Q` ativa um pulso elétrico e `F` levanta um escudo. No celular, use o joystick e os botões na tela.
+Controles: `WASD` ou setas movem, mouse mira e atira, `1–4` troca de arma, `R` recarrega, `E` interage e salva amigos, `Space` esquiva, `Q` ativa um pulso elétrico, `F` levanta um escudo e `C` usa um kit médico. A voz do protagonista usa a síntese de fala do navegador; o botão VOZ liga e desliga as falas.
 
-Rafa, o atirador, ajuda a eliminar zumbis. Luna, a médica, cura você e os companheiros. Existem zumbis corredores e tanques, além de um chefe a cada cinco ondas.
-
-## Versão 3D
-
-`3d.html` contém o protótipo de terceira pessoa feito com Three.js. Rode `python3 -m http.server 8000` e abra `http://localhost:8000/3d.html`. Essa versão precisa de internet para carregar Three.js.
+`2d.html` preserva a versão 2D. Na campanha 3D, elimine a horda, encontre a pessoa presa e use `E` para resgatá-la. O último nível tem um chefe.
 
 ## Testes da lógica
 

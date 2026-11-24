@@ -1,18 +1,18 @@
-ZOMBIE ROYALE — versão leve
+ZOMBIE ROYALE — versão 3D
 
 Abra index.html no navegador e clique em JOGAR.
+Use um servidor local com `python3 -m http.server 8000`; a versão 3D carrega Three.js pela internet.
 
 COMPUTADOR
 WASD ou setas: andar
-Mouse: mirar e atirar
+Mouse: mirar; clique: atirar
 1, 2, 3, 4: trocar de arma
 R: recarregar
 E: abrir baú
 Espaço: esquiva
 Q: pulso elétrico
 F: escudo
+C: kit médico
+E: resgatar amigos (depois de eliminar a horda)
 
-CELULAR
-Use o joystick no canto inferior esquerdo para andar e os botões do lado direito para atirar e ativar poderes.
-
-Rafa ajuda a atirar nos zumbis. Luna cura o esquadrão. Chefes aparecem a cada cinco ondas.
+Rafa ajuda a atirar nos zumbis. Luna cura o jogador. São quatro níveis; cada resgate libera a armadura exigida no próximo. A versão 2D está em 2d.html.
